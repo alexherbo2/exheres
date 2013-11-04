@@ -1,0 +1,11 @@
+SUMMARY='Linux firmware blobs for use with the Linux kernel'
+HOMEPAGE='http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git'
+SCM_REPOSITORY='git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git'
+
+require scm-git
+
+PLATFORMS='~amd64 ~x86'
+
+DEFAULT_SRC_INSTALL_PARAMS=(
+  FIRMWAREDIR=$LIBDIR/firmware
+)

@@ -1,0 +1,13 @@
+SUMMARY='file manager with VI key bindings'
+HOMEPAGE='http://ranger.nongnu.org'
+SCM_REPOSITORY='git://git.savannah.nongnu.org/ranger.git'
+
+require scm-git
+
+LICENCES='GPL-3'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  run:
+    dev-lang/python
+'

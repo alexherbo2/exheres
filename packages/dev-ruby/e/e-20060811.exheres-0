@@ -1,0 +1,28 @@
+SUMMARY='extract any archive'
+HOMEPAGE='http://martin.ankerl.com/2006/08/11/program-e-extract-any-archive'
+DOWNLOADS='http://martin.ankerl.com/files/e'
+WORK=$WORKBASE
+
+LICENCES='Unlicense'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  run:
+    dev-lang/ruby
+'
+
+src_unpack() {
+  cp --recursive $FETCHEDDIR/$ARCHIVES $WORK
+}
+
+src_prepare() {
+  mkdir bin; cp $PN bin
+  mkdir doc; cp $PN doc
+
+  sed --silent --in-place '/^#!/d; /^[^#$]/q; s/^#\s\?//; p' doc/$PN
+}
+
+src_install() {
+  dobin bin/$PN
+  dodoc doc/$PN
+}
