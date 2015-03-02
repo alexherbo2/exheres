@@ -1,0 +1,14 @@
+SUMMARY='simple X background setter inspired by imlibsetroot and feh.'
+HOMEPAGE='https://github.com/ttzhou/setroot'
+SCM_REPOSITORY='git://github.com/ttzhou/setroot'
+
+require scm-git
+
+LICENCES='GPL-3'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    media-libs/imlib2
+    xinerama? ( x11-libs/libXinerama )
+'
