@@ -1,0 +1,19 @@
+SUMMARY='Darwin/OS X emulation layer for Linux'
+HOMEPAGE='http://darlinghq.org'
+SCM_REPOSITORY='git://github.com/LubosD/darling'
+
+require scm-git
+
+LICENCES='GPL-2'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    dev-lang/clang
+    dev-libs/libbsd
+    dev-libs/openssl
+    gnustep/base
+    gnustep/corebase
+    gnustep/gui
+    gnustep/libobjc2
+'
