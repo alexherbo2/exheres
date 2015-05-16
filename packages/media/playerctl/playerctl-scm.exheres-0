@@ -1,8 +1,7 @@
 SUMMARY='mpris controller and lib for spotify, vlc, audacious, bmp, xmms2, mplayer, and others'
 HOMEPAGE='https://github.com/acrisci/playerctl'
-SCM_REPOSITORY='git://github.com/acrisci/playerctl'
 
-require scm-git
+require github [ user=acrisci ]
 
 PLATFORMS='~amd64 ~x86'
 

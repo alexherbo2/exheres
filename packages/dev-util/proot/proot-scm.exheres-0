@@ -1,8 +1,7 @@
 SUMMARY='user-space implementation of chroot, mount --bind and binfmt_misc'
 HOMEPAGE='https://github.com/cedric-vincent/PRoot'
-SCM_REPOSITORY='git://github.com/cedric-vincent/PRoot'
 
-require scm-git
+require github [ user=cedric-vincent ]
 
 LICENCES='GPL-2'
 PLATFORMS='~amd64 ~x86'
