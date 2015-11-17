@@ -1,0 +1,12 @@
+SUMMARY='Google Translate to serve as a command-line tool'
+HOMEPAGE='https://www.soimort.org/translate-shell'
+
+require github [ user=soimort project=translate-shell ]
+
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    app-shells/bash
+    sys-apps/gawk
+'
