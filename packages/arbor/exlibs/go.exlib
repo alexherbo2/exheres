@@ -1,0 +1,33 @@
+site=$(myexparam site)
+user=$(myexparam user=$PN)
+project=$(myexparam project=$PN)
+
+case $site in
+  github.com)
+    require github [ user=$user project=$project ] ;;
+esac
+
+UPSTREAM_DOCUMENTATION=http://godoc.org/$site/$user/$project
+
+DEPENDENCIES='
+  build+run:
+    dev-lang/go
+'
+
+WORK=$WORKBASE/src/$site/$user/$project
+
+go_src_unpack() {
+  mkdir --parents $WORK
+  cd $(dirname $WORK)
+  default
+}
+
+go_src_compile() {
+  GOPATH=$WORKBASE go build
+}
+
+go_src_install() {
+  GOPATH=$WORKBASE go install
+  cd $WORKBASE
+  doins -r bin pkg src
+}
