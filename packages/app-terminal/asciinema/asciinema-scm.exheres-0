@@ -1,0 +1,7 @@
+SUMMARY='Terminal session recorder'
+HOMEPAGE='https://asciinema.org'
+
+require go [ site=github.com ]
+
+LICENCES='GPL-3'
+PLATFORMS='~amd64 ~x86'
