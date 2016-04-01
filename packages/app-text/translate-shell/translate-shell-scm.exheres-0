@@ -1,7 +1,7 @@
-SUMMARY='Google Translate to serve as a command-line tool'
+SUMMARY='Command-line translator using web services'
 HOMEPAGE='https://www.soimort.org/translate-shell'
 
-require github [ user=soimort project=translate-shell ]
+require github [ user=soimort ]
 
 PLATFORMS='~amd64 ~x86'
 
