@@ -1,0 +1,12 @@
+SUMMARY='Perhaps the smallest useful terminal multiplexer in the world'
+HOMEPAGE='https://github.com/deadpixi/mtm'
+
+require github [ user=deadpixi ]
+
+LICENCES='GPL-3'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    sys-libs/ncurses
+'
