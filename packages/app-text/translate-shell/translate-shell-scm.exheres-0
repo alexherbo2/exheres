@@ -3,6 +3,7 @@ HOMEPAGE='http://soimort.org/translate-shell'
 
 require github [ user=soimort ]
 
+LICENCES='public-domain'
 PLATFORMS='~amd64 ~x86'
 
 DEPENDENCIES='
