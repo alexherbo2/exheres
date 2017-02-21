@@ -1,5 +1,5 @@
 SUMMARY='Command-line translator using web services'
-HOMEPAGE='https://www.soimort.org/translate-shell'
+HOMEPAGE='http://soimort.org/translate-shell'
 
 require github [ user=soimort ]
 
