@@ -1,0 +1,7 @@
+SUMMARY='A terminal file manager'
+HOMEPAGE='https://godoc.org/github.com/gokcehan/lf'
+
+require go [ site=github.com user=gokcehan ]
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
