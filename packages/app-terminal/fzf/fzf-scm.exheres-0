@@ -1,0 +1,9 @@
+SUMMARY='A command-line fuzzy finder written in Go'
+HOMEPAGE='https://github.com/junegunn/fzf'
+
+require go [ site=github.com user=junegunn ]
+
+WORK=$WORKBASE/src/$site/$user/$project/src/$project
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
