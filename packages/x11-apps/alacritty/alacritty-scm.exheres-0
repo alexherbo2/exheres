@@ -1,0 +1,17 @@
+SUMMARY='A cross-platform, GPU-accelerated terminal emulator'
+HOMEPAGE='https://github.com/jwilm/alacritty'
+
+require cargo github [ user=jwilm ]
+
+LICENCES='Apache-2.0'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    sys-devel/cmake
+    media-libs/freetype
+    media-libs/fontconfig
+    dev-util/pkg-config
+    sys-devel/make
+    x11-utils/xclip
+'
