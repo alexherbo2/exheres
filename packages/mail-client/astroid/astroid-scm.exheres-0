@@ -1,0 +1,14 @@
+SUMMARY='Astroid is a lightweight and fast Mail User Agent that provides a graphical interface to searching, display and composing e-mail, organized in thread and tags.'
+HOMEPAGE='http://astroidmail.github.io'
+
+require scons github [ user=astroidmail ]
+
+LICENCES='GPL-3'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    dev-libs/boost
+    mail-client/notmuch
+    x11-libs/gtk+:3
+'
