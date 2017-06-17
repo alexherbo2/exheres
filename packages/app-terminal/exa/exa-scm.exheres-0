@@ -1,0 +1,7 @@
+SUMMARY='exa is a modern replacement for ls'
+HOMEPAGE='https://the.exa.website'
+
+require cargo github [ user=ogham ]
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
