@@ -1,0 +1,7 @@
+SUMMARY='Friendly and expressive Unix shell'
+HOMEPAGE='https://elvish.io'
+
+require go [ site=github.com user=elves ]
+
+LICENCES='BSD-2'
+PLATFORMS='~amd64 ~x86'
