@@ -1,0 +1,12 @@
+SUMMARY='Dependency manager for the Crystal language'
+HOMEPAGE='https://github.com/crystal-lang/shards'
+
+require github [ user=crystal-lang ]
+
+LICENCES='Apache'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    dev-lang/crystal
+'
