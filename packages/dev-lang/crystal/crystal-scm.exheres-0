@@ -1,0 +1,21 @@
+SUMMARY='The Crystal Programming Language'
+HOMEPAGE='https://crystal-lang.org'
+
+require github [ user=crystal-lang ]
+
+LICENCES='Apache'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    dev-lang/llvm
+    dev-libs/boehm-gc
+    dev-libs/libatomic_ops
+    dev-libs/libevent
+    dev-libs/libxml2
+    dev-libs/libyaml
+    dev-libs/pcre
+    dev-scm/git
+  suggestion:
+    dev-crystal/shards
+'
