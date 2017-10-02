@@ -1,0 +1,22 @@
+SUMMARY='Cross-platform advanced subtitle editor'
+HOMEPAGE='http://aegisub.org'
+
+require github [ user=Aegisub project=Aegisub ]
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    app-spell/hunspell
+    dev-libs/boost
+    dev-libs/boost
+    dev-libs/icu
+    media-sound/pulseaudio
+    sys-devel/gcc
+    sys-libs/glibc
+    sys-libs/zlib
+    sys-sound/alsa-lib
+    x11-dri/mesa
+    x11-libs/gtk+
+'
