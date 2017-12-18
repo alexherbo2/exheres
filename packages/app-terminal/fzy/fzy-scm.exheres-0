@@ -1,0 +1,12 @@
+SUMMARY='A better fuzzy finder'
+HOMEPAGE='https://github.com/jhawthorn/fzy'
+
+require github [ user=jhawthorn ]
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    sys-libs/glibc
+'
