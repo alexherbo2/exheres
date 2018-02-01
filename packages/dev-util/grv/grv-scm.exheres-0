@@ -1,0 +1,16 @@
+SUMMARY='Terminal interface for viewing Git repositories'
+HOMEPAGE='https://github.com/rgburke/grv'
+
+require go [ site=github.com user=rgburke ]
+
+LICENCES='GPL-3.0'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    sys-libs/ncurses
+    sys-libs/readline
+    net-misc/curl
+    sys-devel/cmake
+    dev-scm/libgit2
+'
