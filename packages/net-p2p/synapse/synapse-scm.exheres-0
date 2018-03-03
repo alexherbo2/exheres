@@ -1,0 +1,12 @@
+SUMMARY='Flexible and fast BitTorrent daemon'
+HOMEPAGE='https://synapse-bt.org'
+
+require cargo github [ user=Luminarys ]
+
+LICENCES='ISC'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    dev-libs/openssl
+'
