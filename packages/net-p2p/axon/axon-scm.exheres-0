@@ -1,0 +1,12 @@
+SUMMARY='Synapse TUI client'
+HOMEPAGE='https://synapse-bt.org'
+
+require cargo github [ user=ParadoxSpiral ]
+
+LICENCES='GPL-3.0'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  run:
+    net-p2p/synapse
+'
