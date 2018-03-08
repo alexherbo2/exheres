@@ -1,4 +1,3 @@
-Exherbo supplemental repository
-===============================
+# Exherbo supplemental repository
 
 http://git.exherbo.org
