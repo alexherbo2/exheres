@@ -1,0 +1,15 @@
+SUMMARY='An utility for setting opacity property'
+HOMEPAGE='https://cgit.freedesktop.org/xorg/app/transset'
+SCM_REPOSITORY='git://anongit.freedesktop.org/xorg/app/transset'
+
+require scm-git
+
+LICENSES='SGI-B-2.0'
+PLATFORMS='~amd64 ~x86'
+
+DEPENDENCIES='
+  build+run:
+    x11-libs/libX11
+    x11-proto/xproto
+    x11-utils/util-macros
+'
