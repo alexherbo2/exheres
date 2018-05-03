@@ -1,0 +1,7 @@
+SUMMARY='A cat(1) clone with wings'
+HOMEPAGE='https://github.com/sharkdp/bat'
+
+require cargo github [ user=sharkdp ]
+
+LICENCES='MIT'
+PLATFORMS='~amd64 ~x86'
