@@ -17,7 +17,7 @@ DEPENDENCIES='
 WORK=$WORKBASE/src/$site/$user/$project
 
 go_src_unpack() {
-  mkdir --parents $WORK
+  mkdir -p $WORK
   cd $(dirname $WORK)
   default
 }

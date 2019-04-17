@@ -12,14 +12,14 @@ DEPENDENCIES='
 '
 
 src_unpack() {
-  cp --recursive $FETCHEDDIR/$ARCHIVES $WORK
+  cp -R $FETCHEDDIR/$ARCHIVES $WORK
 }
 
 src_prepare() {
   mkdir bin; cp $PN bin
   mkdir doc; cp $PN doc
 
-  sed --silent --in-place '/^#!/d; /^[^#$]/q; s/^#\s\?//; p' doc/$PN
+  sed -n -i '/^#!/d; /^[^#$]/q; s/^#\s\?//; p' doc/$PN
 }
 
 src_install() {
